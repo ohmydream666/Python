@@ -9,7 +9,9 @@ def get_user_input(start, end):
         purpose: reads from command-line a integer in the given bounds. 
                  while input invalid asks user again
     """
-
+    if start > end:
+        print("Not valid input:start is bigger than end.")
+        return
     loop = True  # controls while-loop
 
     while loop:
